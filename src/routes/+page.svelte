@@ -9,7 +9,7 @@
 	}
 
 	function formatDate(date: Date) {
-		return `${date.getUTCFullYear()}-${padTwoDigits(date.getUTCMonth())}-${padTwoDigits(date.getDay())}`;
+		return `${date.getUTCFullYear()}-${padTwoDigits(date.getUTCMonth() + 1)}-${padTwoDigits(date.getUTCDay() + 1)}`;
 	}
 
 	function padTwoDigits(s: number) {
